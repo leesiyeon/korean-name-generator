@@ -375,8 +375,22 @@ export default function Home() {
         )}
 
         {/* Footer */}
-        <footer className="text-center mt-16 text-gray-500 dark:text-gray-400 text-sm">
-          <p className="mb-2">© 2025 Korean Name Generator. All rights reserved.</p>
+        <footer className="text-center mt-16 text-gray-500 dark:text-gray-400 text-sm space-y-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-4">
+            <a href="/privacy" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              Privacy Policy
+            </a>
+            <span>•</span>
+            <a href="/terms" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              Terms of Service
+            </a>
+            <span>•</span>
+            <a href="/contact" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              Contact Us
+            </a>
+          </div>
+          <p>© 2025 Korean Name Generator. All rights reserved.</p>
+          <p className="text-xs">Made with 💜 for K-pop & K-drama fans worldwide!</p>
         </footer>
       </div>
     </div>

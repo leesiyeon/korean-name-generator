@@ -24,8 +24,6 @@ npm install
 npm run dev
 ```
 
-브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 확인하세요.
-
 ## 🛠️ 기술 스택
 
 - Next.js 15.5.4 (App Router)
@@ -33,30 +31,9 @@ npm run dev
 - Tailwind CSS
 - Turbopack
 
-## 🔍 SEO 최적화
-
-완전한 SEO 최적화가 적용되어 있습니다:
-- ✅ 메타데이터 (Open Graph, Twitter Cards)
-- ✅ robots.txt & sitemap.xml
-- ✅ JSON-LD 구조화 데이터
-- ✅ PWA 지원
-
-📖 상세 가이드: [SEO-GUIDE.md](./SEO-GUIDE.md)
-
-### 배포 전 필수 작업
-
-1. 실제 도메인 URL로 변경
-2. Google Search Console 인증 코드 입력
-3. 소셜 미디어 이미지 생성 (og-image.png 등)
-
-## 🌐 배포
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
 ## 📝 라이선스
 
 MIT License
 
 ---
-
-Made with 💜 for K-pop & K-drama fans worldwide!

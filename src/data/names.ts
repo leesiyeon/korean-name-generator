@@ -256,7 +256,7 @@ export function getSimilarNames(
   const firstNames = currentName.gender === 'male' ? maleFirstNames : femaleFirstNames;
   
   // 같은 스타일이나 테마를 가진 이름 우선
-  let filtered = firstNames.filter(
+  const filtered = firstNames.filter(
     (name) => name.korean !== currentName.firstName
   );
   

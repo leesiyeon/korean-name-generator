@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { generateRandomName, getSimilarNames, type KoreanName } from '@/data/names';
 
 export default function Home() {
-  const [selectedGender, setSelectedGender] = useState<'male' | 'female' | 'nonbinary' | null>(null);
+  const [selectedGender, setSelectedGender] = useState<'male' | 'female' | 'nonbinary'>('male');
   const [selectedStyle, setSelectedStyle] = useState<'traditional' | 'modern' | 'trendy' | 'any'>('any');
   const [selectedTheme, setSelectedTheme] = useState<'nature' | 'wisdom' | 'strength' | 'beauty' | 'virtue' | 'any'>('any');
   const [generatedName, setGeneratedName] = useState<KoreanName | null>(null);
@@ -12,8 +12,6 @@ export default function Home() {
   const [copied, setCopied] = useState(false);
 
   const handleGenerate = () => {
-    if (!selectedGender) return;
-    
     // Non-binary의 경우 남성/여성 이름 중 랜덤 선택
     const actualGender = selectedGender === 'nonbinary' 
       ? (Math.random() > 0.5 ? 'male' : 'female')
@@ -249,14 +247,9 @@ export default function Home() {
               <div className="pt-4">
                 <button
                   onClick={handleGenerate}
-                  disabled={!selectedGender}
-                  className={`w-full px-8 py-4 rounded-xl font-semibold text-lg transition-all transform ${
-                    selectedGender
-                      ? 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white hover:scale-105 shadow-lg'
-                      : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'
-                  }`}
+                  className="w-full px-8 py-4 rounded-xl font-semibold text-lg transition-all transform bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white hover:scale-105 shadow-lg"
                 >
-                  {selectedGender ? '✨ Generate My Name!' : '👆 Please select a gender first'}
+                  ✨ Generate My Name!
                 </button>
               </div>
             </div>
@@ -362,7 +355,7 @@ export default function Home() {
                 onClick={() => {
                   setGeneratedName(null);
                   setSimilarNames([]);
-                  setSelectedGender(null);
+                  setSelectedGender('male');
                   setSelectedStyle('any');
                   setSelectedTheme('any');
                 }}
@@ -398,7 +391,7 @@ export default function Home() {
             </a>
           </div>
           <p>© 2025 Korean Name Generator. All rights reserved.</p>
-        </footer>
+      </footer>
       </div>
     </div>
     </>

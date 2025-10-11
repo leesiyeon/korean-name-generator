@@ -398,7 +398,6 @@ export default function Home() {
             </a>
           </div>
           <p>© 2025 Korean Name Generator. All rights reserved.</p>
-          <p className="text-xs">Made with 💜 for K-pop & K-drama fans worldwide!</p>
         </footer>
       </div>
     </div>

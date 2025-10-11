@@ -39,6 +39,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://korean-name-generator.vercel.app/blog/gender-neutral-names',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://korean-name-generator.vercel.app/blog/korean-surnames',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://korean-name-generator.vercel.app/blog/beautiful-female-names',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://korean-name-generator.vercel.app/privacy',
       lastModified: new Date(),
       changeFrequency: 'monthly',

@@ -27,25 +27,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Email</h3>
                   <a 
-                    href="mailto:contact@korean-name-generator.com" 
+                    href="mailto:demoat2si@gmail.com" 
                     className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
                   >
-                    contact@korean-name-generator.com
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <span className="text-2xl mr-4">🌐</span>
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-1">GitHub</h3>
-                  <a 
-                    href="https://github.com/leesiyeon/korean-name-generator" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300"
-                  >
-                    github.com/leesiyeon/korean-name-generator
+                    demoat2si@gmail.com
                   </a>
                 </div>
               </div>

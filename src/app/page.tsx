@@ -376,7 +376,15 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="text-center mt-16 text-gray-500 dark:text-gray-400 text-sm space-y-4">
-          <div className="flex flex-wrap justify-center gap-4 mb-4">
+          <div className="flex flex-wrap justify-center gap-3 mb-4 text-xs sm:text-sm">
+            <a href="/about" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              About
+            </a>
+            <span>•</span>
+            <a href="/blog" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              Blog
+            </a>
+            <span>•</span>
             <a href="/privacy" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
               Privacy Policy
             </a>

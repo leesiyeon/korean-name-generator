@@ -41,20 +41,11 @@ export const metadata: Metadata = {
     title: 'Korean Name Generator - Find Your Perfect Korean Name',
     description: 'Generate authentic Korean names with meanings, pronunciation guide, and style preferences. Perfect for K-pop fans and Korean learners.',
     siteName: 'Korean Name Generator',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Korean Name Generator',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Korean Name Generator - Find Your Perfect Korean Name',
     description: 'Generate authentic Korean names with meanings, pronunciation guide, and style preferences.',
-    images: ['/og-image.png'],
     creator: '@koreannamegen',
   },
   robots: {
@@ -83,8 +74,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#8b5cf6" />
       </head>
       <body

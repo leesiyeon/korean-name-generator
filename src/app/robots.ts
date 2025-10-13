@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://korean-name-generator.vercel.app/sitemap.xml',
+    sitemap: 'https://korean-name-generator-delta.vercel.app/sitemap.xml',
   }
 }
 

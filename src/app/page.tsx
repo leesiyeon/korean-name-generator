@@ -46,20 +46,73 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Korean Name Generator',
-    description: 'Generate authentic Korean names with meanings, pronunciation guide, and style preferences',
-    url: 'https://korean-name-generator.vercel.app',
+    alternateName: '한국 이름 생성기',
+    description: 'Create authentic Korean names instantly! Free Korean name generator with meanings, pronunciation, and style options. Perfect for K-pop fans, Korean learners, and K-drama enthusiasts.',
+    url: 'https://korean-name-generator-delta.vercel.app',
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Any',
+    browserRequirements: 'Requires JavaScript. Requires HTML5.',
+    softwareVersion: '1.0',
+    dateCreated: '2025-01-01',
+    dateModified: new Date().toISOString().split('T')[0],
+    author: {
+      '@type': 'Organization',
+      name: 'Korean Name Generator',
+      url: 'https://korean-name-generator-delta.vercel.app'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Korean Name Generator',
+      url: 'https://korean-name-generator-delta.vercel.app'
+    },
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      validFrom: '2025-01-01'
     },
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.8',
       ratingCount: '1250',
+      bestRating: '5',
+      worstRating: '1'
     },
+    keywords: 'Korean name generator, Korean names, K-pop names, Korean culture, Korean learning, Korean pronunciation, 한국 이름, 이름 생성기',
+    inLanguage: ['en', 'ko'],
+    isAccessibleForFree: true,
+    featureList: [
+      'Generate Korean names with meanings',
+      'Pronunciation guide with romanization',
+      'Style preferences (traditional, modern, trendy)',
+      'Theme selection (nature, wisdom, strength, beauty, virtue)',
+      'Gender options (male, female, non-binary)',
+      'Similar name suggestions',
+      'Copy to clipboard functionality',
+      'Mobile-friendly interface'
+    ],
+    screenshot: 'https://korean-name-generator-delta.vercel.app/og-image.png',
+    mainEntity: {
+      '@type': 'Thing',
+      name: 'Korean Name Generator Tool',
+      description: 'A free online tool to generate authentic Korean names with meanings and pronunciation guides'
+    },
+    potentialAction: {
+      '@type': 'UseAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://korean-name-generator-delta.vercel.app',
+        actionPlatform: [
+          'https://schema.org/DesktopWebPlatform',
+          'https://schema.org/MobileWebPlatform'
+        ]
+      },
+      'object': {
+        '@type': 'WebSite',
+        name: 'Korean Name Generator'
+      }
+    }
   };
 
   return (
@@ -73,10 +126,13 @@ export default function Home() {
         {/* Header */}
         <header className="text-center mb-12 pt-8">
           <h1 className="text-5xl sm:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Korean Name Generator
+            Korean Name Generator - Free Korean Name Creator
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
-            Discover your Korean name! 🇰🇷
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-2">
+            Create authentic Korean names instantly! 🇰🇷
+          </p>
+          <p className="text-base text-gray-500 dark:text-gray-400">
+            Generate Korean names with meanings, pronunciation guide, and style preferences. Perfect for K-pop fans, Korean learners, and K-drama enthusiasts.
           </p>
         </header>
 
@@ -87,7 +143,7 @@ export default function Home() {
               {/* Gender Selection */}
               <div>
                 <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                  👤 Select your gender identity
+                  👤 Choose Your Gender Identity for Korean Name Generation
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <button
@@ -127,9 +183,9 @@ export default function Home() {
 
               {/* Style Selection */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                  ✨ Choose a style
-                </h3>
+                <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+                  ✨ Select Korean Name Style (Traditional, Modern, or Trendy)
+                </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                   <button
                     onClick={() => setSelectedStyle('any')}
@@ -176,9 +232,9 @@ export default function Home() {
 
               {/* Theme Selection */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                  🎨 Choose a theme
-                </h3>
+                <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+                  🎨 Pick a Korean Name Theme (Nature, Wisdom, Strength, Beauty, Virtue)
+                </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                   <button
                     onClick={() => setSelectedTheme('any')}
@@ -306,9 +362,9 @@ export default function Home() {
 
             {/* Similar Names */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
-                ✨ Try these similar names
-              </h3>
+              <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+                ✨ Try These Similar Korean Names
+              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {similarNames.map((name, index) => (
                   <button
@@ -366,6 +422,49 @@ export default function Home() {
             </div>
           </div>
         )}
+
+        {/* SEO Content Section */}
+        <section className="mt-16 mb-8">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200">
+              Why Choose Our Korean Name Generator?
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-gray-700 dark:text-gray-300">
+                  🎯 Authentic Korean Names
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Our Korean name generator creates authentic names with proper meanings, pronunciation guides, and cultural significance. Perfect for K-pop fans, Korean learners, and anyone interested in Korean culture.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-gray-700 dark:text-gray-300">
+                  🌟 Multiple Style Options
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Choose from traditional Korean names, modern names, or trendy names. Select themes like nature, wisdom, strength, beauty, or virtue to find names that match your personality.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-gray-700 dark:text-gray-300">
+                  📱 Mobile-Friendly Tool
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Our Korean name generator works perfectly on all devices. Generate Korean names on your phone, tablet, or computer with our responsive design.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-3 text-gray-700 dark:text-gray-300">
+                  🆓 Completely Free
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  Generate unlimited Korean names for free. No registration required, no hidden fees. Start creating your perfect Korean name right now!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Footer */}
         <footer className="text-center mt-16 text-gray-500 dark:text-gray-400 text-sm space-y-4">

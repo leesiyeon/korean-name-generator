@@ -8,6 +8,55 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'korean-name-pronunciation',
+    title: 'Korean Name Pronunciation Guide',
+    excerpt: 'Learn how to pronounce Korean names correctly with our comprehensive guide. Master hangul sounds, romanization systems, and common pronunciation mistakes.',
+    date: '2025-01-17',
+    category: 'Language Guide',
+  },
+  {
+    slug: 'nature-themed-names',
+    title: 'Nature-Themed Korean Names',
+    excerpt: 'Discover beautiful Korean names inspired by nature—from Ha-neul (sky) to Si-woo (universe). Explore names celebrating the natural world.',
+    date: '2025-01-16',
+    category: 'Name Themes',
+  },
+  {
+    slug: 'popular-male-names',
+    title: 'Top 30 Popular Korean Male Names',
+    excerpt: 'Explore the most beloved Korean boy names including Min-jun, Seo-jun, and Ji-ho. Learn their beautiful meanings and why parents choose them.',
+    date: '2025-01-16',
+    category: 'Popular Names',
+  },
+  {
+    slug: 'popular-female-names',
+    title: 'Top 30 Popular Korean Female Names',
+    excerpt: 'Discover the most popular Korean girl names including Seo-yeon, Ji-woo, and Ha-yoon. Learn their meanings and cultural significance.',
+    date: '2025-01-16',
+    category: 'Popular Names',
+  },
+  {
+    slug: 'kim-surname-origin',
+    title: 'Kim Surname: History and Royal Origins',
+    excerpt: 'Discover the fascinating history of Kim (김), the most popular Korean surname with royal heritage. Learn why 21% of Koreans share this name.',
+    date: '2025-01-15',
+    category: 'Surnames',
+  },
+  {
+    slug: 'lee-surname-origin',
+    title: 'Lee Surname: Korea\'s Royal Dynasty Name',
+    excerpt: 'Explore the imperial heritage of Lee (이), Korea\'s second most common surname from the Joseon Dynasty. Learn about famous Lees throughout history.',
+    date: '2025-01-15',
+    category: 'Surnames',
+  },
+  {
+    slug: 'park-surname-origin',
+    title: 'Park Surname: Ancient Silla Kingdom Heritage',
+    excerpt: 'Learn about Park (박), Korea\'s third most popular surname with 2,000 years of Silla Kingdom history. Discover its legendary origins.',
+    date: '2025-01-15',
+    category: 'Surnames',
+  },
+  {
     slug: 'korean-name-history',
     title: 'The Rich History of Korean Names',
     excerpt: 'Explore the fascinating history and evolution of Korean naming traditions from ancient times to modern day.',

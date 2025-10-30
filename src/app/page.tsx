@@ -477,6 +477,10 @@ export default function Home() {
               Blog
             </a>
             <span>•</span>
+            <a href="/names" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+              Names Database
+            </a>
+            <span>•</span>
             <a href="/privacy" className="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
               Privacy Policy
             </a>
